@@ -7,6 +7,7 @@ import Intro from '../comps/intro'
 import Team from '../comps/Team'
 import styles from '../styles/Home.module.scss'
 import Router from 'next/router';
+import Nav from '../comps/Nav'
 
 export default function Home() {
 
@@ -23,23 +24,7 @@ export default function Home() {
       </Head>
 
 
-      <nav>
-        <div className={styles.header}>
-          <img src="/icons/pngfind.com-journey-png-6403705 (1).png" alt="" />
-          <li>
-            <ul>About</ul>
-            <ul>Find Safe route</ul>
-            <ul>Add Black-spot</ul>
-          </li>
-
-<div className={styles.btns}>
-
-          <button onClick={() => Router.push('/Auth')}>Login</button>
-          <button onClick={() => Router.push('/Auth')}>Register</button>
-</div>
-
-        </div>
-      </nav>
+     <Nav />
 
       <Intro />
       <Add />

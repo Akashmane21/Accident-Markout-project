@@ -9,7 +9,7 @@ export default function intro() {
             
               {/* <img src="https://iconape.com/wp-content/png_logo_vector/a-safe-workplace-is-no-accident.png" alt="" /> */}
          <div className={styles.tag}>
-             <h1>Find Safe & Obstacle Free Safe Route For your Next Journey ! </h1>
+             <h1>Find Safe & Obstacle Free Route For your Next Journey ! </h1>
              <h3>
                  The Road ahead is may be a long but it must be a Safe so,
                  Dont Worry , We're here

@@ -366,7 +366,7 @@ margin: auto;
 span{
   margin-top: 40px;
   margin-top: 10px;
-  background-color: rgba(209, 235, 235, 0.678);
+  // background-color: rgba(209, 235, 235, 0.678);
   margin-right: 30px;
 // box-shadow: 3px 5px 10px  #393b3d98;
 border-radius: 10px;
@@ -448,6 +448,14 @@ span{
   input{
     width: 200px;
   }
+}
+
+
+  }
+
+  .joinbtn{
+    button{
+width: 200px;
 }
   }
 }

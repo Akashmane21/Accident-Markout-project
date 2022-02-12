@@ -3,43 +3,19 @@
   "name": "Accident-Markout",
   "description": "...",
   "icons": [
+    
     {
-      "src": "/icons/logo.JPG",
-      "type": "image/png",
-      "sizes": "36x36"
-    },
-    {
-      "src": "/icons/logo.JPG",
-      "type": "image/png",
-      "sizes": "48x48"
-    },
-    {
-      "src": "/icons/logo.JPG",
-      "type": "image/png",
-      "sizes": "72x72"
-    },
-    {
-      "src": "/icons/logo.JPG",
-      "type": "image/png",
-      "sizes": "96x96"
-    },
-    {
-      "src": "/icons/logo.JPG",
-      "type": "image/png",
-      "sizes": "144x144"
-    },
-    {
-      "src": "/icons/logo.JPG",
+      "src": "/icons/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/icons/logo.JPG",
+      "src": "/icons/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "/icons/logo.JPG",
+      "src": "/icons/android-chrome-maskable-192x192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "maskable"

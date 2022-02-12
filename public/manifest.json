@@ -1,45 +1,45 @@
 {
   "short_name": "Project",
-  "name": "B.E. Final Year Project",
+  "name": "Accident-Markout",
   "description": "...",
   "icons": [
     {
-      "src": "/icons/android-36x36.png",
+      "src": "/icons/logo.JPG",
       "type": "image/png",
       "sizes": "36x36"
     },
     {
-      "src": "/icons/android-48x48.png",
+      "src": "/icons/logo.JPG",
       "type": "image/png",
       "sizes": "48x48"
     },
     {
-      "src": "/icons/android-72x72.png",
+      "src": "/icons/logo.JPG",
       "type": "image/png",
       "sizes": "72x72"
     },
     {
-      "src": "/icons/android-96x96.png",
+      "src": "/icons/logo.JPG",
       "type": "image/png",
       "sizes": "96x96"
     },
     {
-      "src": "/icons/android-144x144.png",
+      "src": "/icons/logo.JPG",
       "type": "image/png",
       "sizes": "144x144"
     },
     {
-      "src": "/icons/android-192x192.png",
+      "src": "/icons/logo.JPG",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/icons/android-chrome-512x512.png",
+      "src": "/icons/logo.JPG",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "/icons/android-chrome-192x192.png",
+      "src": "/icons/logo.JPG",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "maskable"

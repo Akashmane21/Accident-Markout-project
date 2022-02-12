@@ -40,41 +40,41 @@ alert(name)
 <div >
 <h2> Log in </h2>
               <h6>Hello , welcome back to SafeJourney.io</h6>
+                                    <div className={styles.forminput}>
+
               <Formik
+              
                       initialValues={{ email: "", password: "" }}
                       onSubmit={async (values) => {
                         newLogin(values);
                       }}
                     >
                       <Form >
-                      <div className={styles.forminput}>
 
                       <span>
-                      {/* <i class="fas fa-user"></i> */}
                       <h5>Email : </h5>
                         <Field placeholder="example@gmail.com" name="email" type="email" required={true}/>
                       </span>
                       <br />
             
                      <span>
-                     {/* <i class="fas fa-lock"></i> */}
                      <h5>Password:</h5>
                         <Field placeholder="********" name="password" type="password" required={true} />
                      </span>
                      <br />
-                      </div>
+                     
 
                           <div className={styles.joinbtn}>
                             <button type="submit">Login</button>
                           </div>
-
-                         
+                          <h5>
+                Dont Have Account ? <h4 onClick={()=> setisLogin(false)}>Register Now</h4>
+              </h5>
                     
                       </Form>
                     </Formik>
-                    <h5>
-                Dont Have Account ? <h4 onClick={()=> setisLogin(false)}>Create Account</h4>
-              </h5>
+ </div>
+                   
 
 
 </div>
@@ -92,7 +92,7 @@ alert(name)
                       }}
                     >
                       <Form >
-                      <div >
+                      <div className={styles.reg}>
 
                       <span>
                       <h5>Name : </h5>

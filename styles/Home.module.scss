@@ -58,6 +58,7 @@
       border: 1px solid rgba(128, 128, 128, 0.705);
       border-radius: 5px;
       font-weight: 500;
+      color: orangered;
 
       padding: 4px 20px;
     }
@@ -346,6 +347,8 @@ margin: auto;
     width: 50%;
     // display: flex;
     padding: 20px;
+    padding-left: 100px;
+
     height: 100vh;
     padding-top: 100px;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='1060' preserveAspectRatio='none' viewBox='0 0 1440 1060'%3e%3cg clip-path='url(%26quot%3b%23SvgjsClipPath1037%26quot%3b)' fill='none'%3e%3ccircle r='66.34' cx='1107.03' cy='145.92' fill='url(%23SvgjsLinearGradient1038)'%3e%3c/circle%3e%3ccircle r='45.5' cx='1202.06' cy='36.62' fill='url(%23SvgjsLinearGradient1039)'%3e%3c/circle%3e%3ccircle r='64.53' cx='615.39' cy='596.98' fill='%2343468b'%3e%3c/circle%3e%3ccircle r='46.88' cx='866.37' cy='449.12' fill='%2343468b'%3e%3c/circle%3e%3ccircle r='102.12' cx='14.34' cy='32.19' fill='url(%23SvgjsLinearGradient1040)'%3e%3c/circle%3e%3ccircle r='34.065' cx='537.28' cy='438.01' fill='url(%23SvgjsLinearGradient1041)'%3e%3c/circle%3e%3ccircle r='32.12' cx='158.59' cy='851.86' fill='url(%23SvgjsLinearGradient1042)'%3e%3c/circle%3e%3ccircle r='43.17' cx='664.84' cy='796.91' fill='url(%23SvgjsLinearGradient1043)'%3e%3c/circle%3e%3c/g%3e%3cdefs%3e%3cclipPath id='SvgjsClipPath1037'%3e%3crect width='1440' height='1060' x='0' y='0'%3e%3c/rect%3e%3c/clipPath%3e%3clinearGradient x1='974.3499999999999' y1='145.92' x2='1239.71' y2='145.92' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1038'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='1111.06' y1='36.62' x2='1293.06' y2='36.62' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1039'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='-189.9' y1='32.19' x2='218.58' y2='32.19' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1040'%3e%3cstop stop-color='%23f29b7c' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%237e6286' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='469.15' y1='438.01' x2='605.41' y2='438.01' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1041'%3e%3cstop stop-color='%2332325d' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23424488' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='94.35000000000001' y1='851.86' x2='222.82999999999998' y2='851.86' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1042'%3e%3cstop stop-color='%23e298de' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%23484687' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3clinearGradient x1='578.5' y1='796.91' x2='751.1800000000001' y2='796.91' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1043'%3e%3cstop stop-color='%23ab3c51' offset='0.1'%3e%3c/stop%3e%3cstop stop-color='%234f4484' offset='0.9'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
@@ -355,8 +358,10 @@ margin: auto;
     justify-content: center;
 margin: auto;
 .forminput{
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
+  // background-color: rgb(170, 66, 66);
+  // padding-left: 100px;
 }
 span{
   margin-top: 40px;
@@ -367,7 +372,8 @@ span{
 border-radius: 10px;
   h5{
     // font-family: serif;
-    font-size: 15px;
+    padding-left: 10px;
+    font-size: 20px;
   }
   i{
     color: gray;
@@ -378,6 +384,10 @@ border-radius: 10px;
   input{
 border: 0px solid gray;
 outline: 0px;
+width: 300px;
+padding: 10px 30px;
+border-radius: 40px;
+
 // border-color: #fff;
   }
 }
@@ -386,6 +396,9 @@ outline: 0px;
       border-radius: 0px;
       margin: 20px  0px;
       transition: 0.5s background-color;
+      width: 300px;
+      border-radius: 40px;
+      padding: 10px 30px;
       &:hover{
         border-width: 10px solid orangered;
       }
@@ -410,17 +423,30 @@ h5{
   padding-top: 20px;
   font-family: 'Poppins', sans-serif;
 font-weight: 700;
+font-size: 15px;
   h4{
     padding-left: 20px;
     color: blue;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
 
-    font-size: 20px;
+    font-size: 15px;
 
     &:hover{
       cursor: pointer;
     }
+  }
+}
+  }
+
+  .reg{
+    // background-color: #024357;
+    display: flex;
+    flex-wrap: wrap;
+span{
+
+  input{
+    width: 200px;
   }
 }
   }

@@ -1,0 +1,85 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box{
+  display: flex;
+}
+.info{
+  width: 50%;
+  // height: 100vh;
+  // overflow-y: scroll;
+
+  .info-data{
+    padding: 20px;
+    h1{
+      color: rgb(73, 73, 73);
+
+    }
+    p{
+      font-size: 16px;
+      padding-top: 30px;
+
+    }
+  }
+  img{
+    height: 300px;
+    width: 100%;
+  }
+}
+
+.Loc{
+  display: flex;
+  background-color: rgba(230, 225, 225, 0.938);
+  border-radius: 40px;
+  align-items: center;
+  width: 200px;
+  padding: 4px;
+  h2{
+    padding-top: 5px;
+    font-size: 20px;
+  }
+  i{
+    font-size: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+
+button{
+  border-radius: 30px;
+  background-color: orangered;
+  outline: 0px;
+  color: #ffffff;
+  border-width: 0px;
+  padding: 2px 20px;
+
+  transition: 1s background-color;
+
+  &:hover{
+    background-color: white;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 2px 12px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color: orangered;
+
+
+  }
+}

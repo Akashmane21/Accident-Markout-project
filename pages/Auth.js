@@ -73,7 +73,7 @@ alert(name)
                       </Form>
                     </Formik>
                     <h5>
-                Don't Have Account ? <h4 onClick={()=> setisLogin(false)}>Create Account</h4>
+                Dont Have Account ? <h4 onClick={()=> setisLogin(false)}>Create Account</h4>
               </h5>
 
 

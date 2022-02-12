@@ -17,7 +17,7 @@ Router.onRouteChangeError = () => NProgress.done();
 function MyApp({ Component, pageProps }) {
   return (
     <>
-       <Script
+       {/* <Script
         strategy="lazyOnload"
         src="https://www.googletagmanager.com/gtag/js?id=G-MEBVMT30N0"
       />
@@ -31,7 +31,7 @@ function MyApp({ Component, pageProps }) {
          gtag('config', 'G-2K5R174KFM');
            
                 `}
-      </Script> 
+      </Script>  */}
 
       
       <Head>

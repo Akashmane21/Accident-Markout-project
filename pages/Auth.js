@@ -2,16 +2,26 @@ import React, { useState } from 'react';
 import { useFormik } from 'formik';
 import { Formik, Field, Form } from "formik";
 import styles from "../styles/Home.module.scss";
-
+import firebase from '../db/firebase';
 export default function Auth() {
-
+console.log(firebase);
     const [isLogin, setisLogin] = useState(true);
 
     
 
 
-    const newRegister = (data) => {    
+    const newRegister = async (data) => {    
       
+     
+      fetch('https://akash-flask-server.herokuapp.com/hashIt?pass=Your_password')
+    .then(response => {
+        console.log(response);
+    })
+    .catch(error => {
+        console.log(error);
+    });
+
+
         const user = {
           Name:data.username,
           Phone:data.phone ,
@@ -24,8 +34,12 @@ export default function Auth() {
 
     function newLogin({email , password}) {
         const name = email + "_" + password;
-alert(name)
+        alert(name)
     }
+
+
+
+
   return (
   <div className={styles.Auth}>
 <div className={styles.poster}>

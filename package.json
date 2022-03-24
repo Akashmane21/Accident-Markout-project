@@ -8,8 +8,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mui/icons-material": "^5.5.1",
+    "@mui/material": "^5.5.2",
+    "@mui/styled-engine-sc": "^5.5.2",
+    "firebase": "^8.3.1",
     "formik": "^2.2.9",
     "google-map-react": "^2.1.10",
+    "google-maps-react": "^2.0.6",
     "next": "12.0.4",
     "next-pwa": "^5.4.4",
     "nprogress": "^0.2.0",
@@ -17,7 +22,8 @@
     "react-dom": "17.0.2",
     "react-google-maps": "^9.4.5",
     "recompose": "^0.30.0",
-    "sass": "^1.42.1"
+    "sass": "^1.42.1",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "eslint": "7.32.0",

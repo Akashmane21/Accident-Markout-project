@@ -11,7 +11,6 @@ const Layout = ({ children }) => {
     <Head>
   <link rel='manifest' href='/manifest.json' />
   <meta charset="utf-8" />
-    <link rel="icon" href="https://static.vecteezy.com/system/resources/thumbnails/002/135/986/small/chat-wing-logo-design-illustration-free-vector.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#014473" />
     <meta name="apple-mobile-web-app-status-bar-style" content="white" />

@@ -1,7 +1,11 @@
 import React from "react";
 import styles from "../styles/Home.module.scss";
+import { useRouter } from 'next/router'
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Add_block() {
+  const router = useRouter()
+
   return (
     <>
       <div className={styles.Add_Block}>
@@ -17,7 +21,7 @@ export default function Add_block() {
           </h3>
 
           <div className={styles.block}>
-            <div className={styles.add}>
+            <div className={styles.add} onClick={()=> router.push('/User')}>
             <i class="fas fa-plus"></i>
             <h4>Add Now</h4>
 

@@ -70,11 +70,11 @@ export default function User() {
   let UTurnimg =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAzYVEbWzOrp3hyGrfAITPOFpmEMyap14LHw&usqp=CAU";
 
-  useEffect(async () => {
-    const Username = await localStorage.getItem("id");
+  useEffect( () => {
+    const Username =  localStorage.getItem("id");
 
     if (Username != null) {
-      const User = await firebase
+      const User =  firebase
         .database()
         .ref(`BE-Project/All_Users/${Username}/Auth`);
       User.on("value", (snapshot) => {
@@ -86,7 +86,7 @@ export default function User() {
       toast.error("User Not Authenticated...");
     }
 
-    const alldatas = await firebase.database().ref(`BE-Project/All_Entries/`);
+    const alldatas =  firebase.database().ref(`BE-Project/All_Entries/`);
     alldatas.on("value", (snapshot) => {
       const AllEntries = [];
       const AllVarified = [];
@@ -241,7 +241,7 @@ export default function User() {
                   {AllData.length != 0 ? (
                     AllData.map((getData, key) => (
                       <Fade bottom>
-                        <div className="infocard">
+                        <div key={key} className="infocard">
                           {getData.Name != "NA" && (
                             <div className="allinfocard">
                               <div className="flex">

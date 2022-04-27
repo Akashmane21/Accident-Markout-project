@@ -74,11 +74,11 @@ export default function User() {
   let UTurnimg =
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAzYVEbWzOrp3hyGrfAITPOFpmEMyap14LHw&usqp=CAU";
 
-  useEffect(async () => {
-    const Username = await localStorage.getItem("id");
+  useEffect( () => {
+    const Username =  localStorage.getItem("id");
 
     if (Username == "Akash_12345") {
-      const User = await firebase
+      const User =  firebase
         .database()
         .ref(`BE-Project/All_Users/${Username}/Auth`);
       User.on("value", (snapshot) => {
@@ -90,7 +90,7 @@ export default function User() {
       toast.warning("You are not Admin...");
     }
 
-    const alluser = await firebase.database().ref(`BE-Project/All_Users/`);
+    const alluser =  firebase.database().ref(`BE-Project/All_Users/`);
     alluser.on("value", (snapshot) => {
       const Alluserss = [];
 
@@ -105,7 +105,7 @@ export default function User() {
       console.log(reversed);
     });
 
-    const alldatas = await firebase.database().ref(`BE-Project/All_Entries/`);
+    const alldatas =  firebase.database().ref(`BE-Project/All_Entries/`);
     alldatas.on("value", (snapshot) => {
       const AllEntries = [];
       const AllVarified = [];
@@ -498,6 +498,7 @@ export default function User() {
                   {AllData.length != 0 ? (
                     AllData.map((data, key) => (
                       <div
+                      key={key}
                         className="infocard"
                         onClick={() => {
                           setgetData(data);

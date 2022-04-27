@@ -119,7 +119,7 @@ export default function AddConstruction() {
   const [date, setdate] = useState("");
   const [time, settime] = useState("");
 
-  useEffect(async () => {
+  useEffect( () => {
     let currentDate = new Date();
     let cDay = currentDate.getDate();
     let cMonth = currentDate.getMonth() + 1;
@@ -138,10 +138,10 @@ export default function AddConstruction() {
     });
     setName();
 
-    const Username = await localStorage.getItem("id");
+    const Username =  localStorage.getItem("id");
 
     if (Username != null) {
-      const User = await firebase
+      const User =  firebase
         .database()
         .ref(`BE-Project/All_Users/${Username}/Auth`);
       User.on("value", (snapshot) => {
@@ -388,8 +388,8 @@ export default function AddConstruction() {
                       label="City"
                     >
                       {Cities &&
-                        Cities.map((data) => (
-                          <MenuItem value={data}>{data}</MenuItem>
+                        Cities.map((data , key) => (
+                          <MenuItem key={key} value={data}>{data}</MenuItem>
                         ))}
                     </Select>
                   </FormControl>
@@ -406,8 +406,8 @@ export default function AddConstruction() {
                       label="District"
                     >
                       {Districts &&
-                        Districts.map((data) => (
-                          <MenuItem value={data}>{data}</MenuItem>
+                        Districts.map((data , key) => (
+                          <MenuItem key={key} value={data}>{data}</MenuItem>
                         ))}
                     </Select>
                   </FormControl>
@@ -425,8 +425,8 @@ export default function AddConstruction() {
                       label="State"
                     >
                       {States &&
-                        States.map((data) => (
-                          <MenuItem value={data}>{data}</MenuItem>
+                        States.map((data , key) => (
+                          <MenuItem key={key} value={data}>{data}</MenuItem>
                         ))}
                     </Select>
                   </FormControl>
@@ -443,8 +443,8 @@ export default function AddConstruction() {
                       label="Country"
                     >
                       {Countries &&
-                        Countries.map((data) => (
-                          <MenuItem value={data}>{data}</MenuItem>
+                        Countries.map((data , key) => (
+                          <MenuItem key={key} value={data}>{data}</MenuItem>
                         ))}
                     </Select>
                   </FormControl>

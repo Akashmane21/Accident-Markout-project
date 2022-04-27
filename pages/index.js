@@ -19,7 +19,7 @@ export default function Home() {
   const [Userdata, setUserdata] = useState([]);
   const router = useRouter();
 
-  useEffect(async () => {}, []);
+
 
   return (
     <div className={styles.container}>

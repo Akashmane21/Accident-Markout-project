@@ -610,7 +610,7 @@ export default function User() {
                 <div className="users">
                   {AllUsers ? (
                     AllUsers.map((data, key) => (
-                      <div className="user">
+                      <div key={key} className="user">
                         <h3>Name : {data.Name}</h3>
                         <h4>Phone : {data.Phone}</h4>
                         <h4>Email : {data.email}</h4>

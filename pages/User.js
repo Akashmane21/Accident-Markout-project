@@ -240,8 +240,8 @@ export default function User() {
                 <div className="cardflex">
                   {AllData.length != 0 ? (
                     AllData.map((getData, key) => (
-                      <Fade bottom>
-                        <div key={key} className="infocard">
+                      <Fade key={key} bottom>
+                        <div className="infocard">
                           {getData.Name != "NA" && (
                             <div className="allinfocard">
                               <div className="flex">

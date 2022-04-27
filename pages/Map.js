@@ -37,13 +37,13 @@ function SimpleMap() {
     zoom: 11,
   };
 
-  useEffect(async () => {
+  useEffect( () => {
     navigator.geolocation.getCurrentPosition(function (position) {
       setLAT(position.coords.latitude);
       setLNG(position.coords.longitude);
     });
 
-    const alldatas = await firebase.database().ref(`BE-Project/All_Entries/`);
+    const alldatas =  firebase.database().ref(`BE-Project/All_Entries/`);
     alldatas.on("value", (snapshot) => {
       const todoList = [];
       const todos = snapshot.val();

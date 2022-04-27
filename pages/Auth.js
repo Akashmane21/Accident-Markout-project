@@ -83,7 +83,7 @@ export default function Auth() {
         {isLogin ? (
           <div>
             <h2> Log in </h2>
-            <h6>Hello , welcome back to SafeJourney.io</h6>
+            <h6>Hello , welcome back </h6>
             <div className={styles.forminput}>
               <Formik
                 initialValues={{ username: "", password: "" }}
@@ -93,7 +93,7 @@ export default function Auth() {
               >
                 <Form>
                   <span>
-                    <h5>Name : </h5>
+                    <h5>Name  </h5>
                     <Field
                       placeholder="Enter your User name"
                       name="username"
@@ -104,7 +104,7 @@ export default function Auth() {
                   <br />
 
                   <span>
-                    <h5>Password:</h5>
+                    <h5>Password</h5>
                     <Field
                       placeholder="********"
                       name="password"
@@ -128,7 +128,7 @@ export default function Auth() {
         ) : (
           <>
             <h2> Register Now </h2>
-            <h6>Hello , welcome to SafeJourney.io</h6>
+            <h6>Hello , welcome </h6>
 
             <Formik
               initialValues={{ username: "", password: "", phone: "" }}
@@ -139,7 +139,7 @@ export default function Auth() {
               <Form>
                 <div className={styles.reg}>
                   <span>
-                    <h5>Name : </h5>
+                    <h5>Name  </h5>
                     <Field
                       placeholder="Enter your Name"
                       name="username"
@@ -150,7 +150,7 @@ export default function Auth() {
                   <br />
 
                   <span>
-                    <h5>Phone : </h5>
+                    <h5>Contact </h5>
                     <Field
                       placeholder="Enter your phone"
                       name="phone"
@@ -161,7 +161,7 @@ export default function Auth() {
                   <br />
 
                   <span>
-                    <h5>Email : </h5>
+                    <h5>Email Id </h5>
                     <Field
                       placeholder="example@gmail.com"
                       name="email"
@@ -172,7 +172,7 @@ export default function Auth() {
                   <br />
 
                   <span>
-                    <h5>Password : </h5>
+                    <h5>Password  </h5>
                     <Field
                       placeholder="********"
                       name="password"

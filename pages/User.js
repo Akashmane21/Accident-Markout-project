@@ -221,7 +221,7 @@ export default function User() {
                     startIcon={<CheckCircleIcon />}
                     style={{ color: `${Variactive}` }}
                   >
-                    Varified
+                    Verified
                   </Button>
 
                   <Button
@@ -234,7 +234,7 @@ export default function User() {
                     startIcon={<CancelIcon />}
                     style={{ color: `${notactive}`, paddingRight: 15 }}
                   >
-                    Not Varified
+                    Not Verified
                   </Button>
                 </div>
                 <div className="cardflex">

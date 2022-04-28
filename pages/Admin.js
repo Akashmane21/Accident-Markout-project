@@ -477,7 +477,7 @@ export default function User() {
                     startIcon={<CheckCircleIcon />}
                     style={{ color: `${Variactive}` }}
                   >
-                    Varified
+                    Verified
                   </Button>
 
                   <Button
@@ -490,7 +490,7 @@ export default function User() {
                     startIcon={<CancelIcon />}
                     style={{ color: `${notactive}`, paddingRight: 15 }}
                   >
-                    Not Varified
+                    Not Verified
                   </Button>
                 </div>
 
@@ -628,7 +628,7 @@ export default function User() {
                               border: "1px solid red",
                             }}
                           >
-                            do unvarified
+                            do Unverified
                           </Button>
                         ) : (
                           <Button
@@ -639,7 +639,7 @@ export default function User() {
                             startIcon={<CheckCircleIcon />}
                             style={{ color: "blue", marginRight: 10 }}
                           >
-                            do Varify
+                            do Verify
                           </Button>
                         )}
 

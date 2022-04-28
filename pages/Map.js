@@ -84,7 +84,9 @@ function SimpleMap() {
       <div className="Form">
         <h1>Enter Your Source & Destination :- </h1>
 
-        <div className="flex">
+        <div className="flexform">
+
+
           <div className="formdata">
             <div className="flex">
               <TextField
@@ -176,6 +178,8 @@ function SimpleMap() {
               <h3>Danger hill Roads</h3>
             </div>
           </div>
+
+
         </div>
       </div>
 
@@ -242,6 +246,9 @@ function SimpleMap() {
           </GoogleMapReact>
         </div>
       </div>
+
+
+
       <fade right>
         <div className="info">
           {getData.Name != "NA" && (

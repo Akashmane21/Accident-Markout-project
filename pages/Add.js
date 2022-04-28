@@ -291,8 +291,8 @@ export default function AddConstruction() {
 
       <div className={styles.Auth}>
         <Fade left>
-          <div className={styles.poster}>
-            <img src={Image} alt="" />
+          <div className={styles.imgess}>
+            <img  src={Image} alt="" />
           </div>
         </Fade>
 
@@ -411,7 +411,7 @@ export default function AddConstruction() {
                         ))}
                     </Select>
                   </FormControl>
-                  {/* <br /> */}
+                  <br />
                   <FormControl variant="standard" sx={{ m: 1, minWidth: 120 }}>
                     <InputLabel id="demo-simple-select-standard-label">
                       State

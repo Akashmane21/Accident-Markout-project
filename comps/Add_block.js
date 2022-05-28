@@ -2,10 +2,17 @@ import React from "react";
 import styles from "../styles/Home.module.scss";
 import { useRouter } from 'next/router'
 import 'react-toastify/dist/ReactToastify.css';
+import { toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
+
 
 export default function Add_block() {
   const router = useRouter()
 
+
+  function WhatBlackspot(){
+    toast.success("Black-spots are locations which attract more accidents by comparison with other similar locations on the road system, or locations which have an accident number and/or rate greater than a defined minimum.")
+  }
   return (
     <>
       <div className={styles.Add_Block}>
@@ -26,7 +33,7 @@ export default function Add_block() {
             <h4>Add Now</h4>
 
             </div>
-            <div className={styles.add}>
+            <div className={styles.add} onClick={()=> WhatBlackspot()}>
             <i class="fas fa-map"></i>
 
             <h4>What is Blackspot ?</h4>
@@ -36,6 +43,18 @@ export default function Add_block() {
           </div>
         </div>
       </div>
+
+      <ToastContainer
+          position="top-right"
+          autoClose={10000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+        />
     </>
   );
 }

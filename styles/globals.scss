@@ -247,15 +247,15 @@ h3{
     }
 
     .flexform{
-      // display: flex;
+      display: flex;
       height: 600px;
       img{
-        height: 30px !important;
-        width: 30px !important;
+        // height: 30px !important;
+        // width: 30px !important;
         border-radius: 30px;
       }
       .formdata{
-        // width: 60%;  
+        width: 60%;  
         padding: 20px;
         
       }
@@ -263,21 +263,41 @@ h3{
       .instr{
         border-left: 1px solid rgb(177, 177, 177);
         padding-left: 30px;
+        
         .flex{
           padding: 7px 10px;
           margin-top: 10px;
           align-items: center;
-          background-color: rgba(146, 168, 230, 0.153);
+          height: 45px;
+          background-color: #93a9e627;
           border-radius: 40px;
           h3{
             font-size: 16px;
-            padding-top: 6px;
-            padding-left: 20px;
+            // padding-top: 6px;
+            position: relative;
+            top: -20px;
+            padding-left: 40px;
             color: blueviolet;
           }
           .MuiSvgIcon-root{
 
             color: rgb(141, 139, 221);
+          }
+          transition: 0.2s ease-in-out;
+
+          &:hover{
+            background-color: #93a9e6;
+            color: white;
+            cursor: pointer;
+            box-shadow: rgba(129, 172, 237, 0.425) 0px 10px 10px;
+
+            h3{
+              color:white
+            }
+            .MuiSvgIcon-root{
+
+              color: rgb(255, 255, 255);
+            }
           }
         }
       }

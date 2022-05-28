@@ -78,49 +78,42 @@ function SimpleMap() {
     });
   }
 
+
+  async function GetParticularAreas(area) { 
+
+    const alldatas = await firebase.database().ref(`BE-Project/All_Entries/`);
+    alldatas.on("value", (snapshot) => {
+      const todoList = [];
+      const todos = snapshot.val();
+      for (let id in todos) {
+        if (todos[id].BlackspotType == area) {
+          todoList.push({ id, ...todos[id] });
+        }
+      }
+      const reversed = todoList.reverse();
+      setAllData(reversed);
+     toast.success(`All ${area} Blockspot are Successfully Fetched...`);
+    });
+
+  }
+
   return (
     <>
       <Nav />
       <div className="Form">
-        <h1>Enter Your Source & Destination :- </h1>
+        <h1 style={{ paddingLeft:20 }}>See The Black-spots around you </h1>
 
         <div className="flexform">
 
 
           <div className="formdata">
-            <div className="flex">
-              <TextField
-                variant="outlined"
-                label="Source Location"
-                style={{ marginRight: 60 }}
-                InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">
-                      <MyLocationIcon />
-                    </InputAdornment>
-                  ),
-                }}
-              />
-              <CompareArrowsOutlinedIcon
-                style={{ marginTop: 20, color: "gray" }}
-              />
-              <TextField
-                variant="outlined"
-                label="Destination Location"
-                style={{ marginLeft: 60 }}
-                InputProps={{
-                  startAdornment: (
-                    <InputAdornment position="start">
-                      <AssistantDirectionIcon />
-                    </InputAdornment>
-                  ),
-                }}
-              />
-            </div>
-            <br />
-            <hr />
+            <div className="flex" style={{ display:'flex' }}>
+          
 
-            <TextField
+              <img style={{ width:200 , height:200 }} src="https://media.istockphoto.com/vectors/construction-worker-accident-working-safety-first-health-and-safety-vector-id955316568?k=6&m=955316568&s=170667a&w=0&h=ENsQwa1V_y5tLneUZLDy1aN_YmqiLDwG2ehoHHJZS68="  alt="" />
+         
+           <div style={{ marginLeft:80 }}>
+           <TextField
               value={pin}
               onChange={(e) => setpin(e.target.value)}
               variant="outlined"
@@ -138,36 +131,40 @@ function SimpleMap() {
             <br />
             <Button
               onClick={Search}
-              variant="varient"
+              variant="outlined"
               startIcon={<SearchIcon />}
-              style={{ color: `green` }}
+              style={{ color: `green` , marginTop:15 }}
             >
               Search
             </Button>
             
-
-            <center></center>
-
+           </div>
+           
+            </div>
             <br />
+            <hr />
+
+          
+
           </div>
 
           <div className="instr">
-            <div className="flex">
+            <div className="flex" onClick={() => GetParticularAreas("Construction")}>
               <EngineeringIcon />
               <h3>Construction Point</h3>
             </div>
 
-            <div className="flex">
+            <div className="flex" onClick={() => GetParticularAreas("Accident")}>
               <DangerousIcon />
               <h3>Accident Point</h3>
             </div>
 
-            <div className="flex">
+            <div className="flex" onClick={() => GetParticularAreas("UTurn")}>
               <UTurnLeftIcon />
               <h3>UTurn</h3>
             </div>
 
-            <div className="flex">
+            <div className="flex" onClick={() => GetParticularAreas("Mountain")}>
               <img
                 src="https://media.istockphoto.com/photos/-picture-id140471781?k=20&m=140471781&s=612x612&w=0&h=Sm8G_JRBKlxuwIPEOZ9ZYhvkmqlL1kbvglGRPsQEaRc="
                 height="30px"
@@ -253,7 +250,7 @@ function SimpleMap() {
         <div className="info">
           {getData.Name != "NA" && (
             <div className="allinfo">
-              <div className="flex">
+              <div className="flex" >
                 {getData.BlackspotType == "Construction" && (
                   <Tooltip title="Construction">
                     <EngineeringIcon />

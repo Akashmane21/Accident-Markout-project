@@ -47,7 +47,7 @@ export default  function Nav() {
       <img   onClick={()=> router.push('/')} src="/icons/pngfind.com-journey-png-6403705 (1).png" alt="" />
       <li>
         <ul onClick={()=> router.push('/#Footer')}>About</ul>
-        <ul onClick={()=> router.push('/Map')}>Find Safe route</ul>
+        <ul onClick={()=> router.push('/Map')}>Find Black-spots</ul>
         <ul onClick={()=> router.push('/User')}>Add Black-spot</ul>
 
         {usernamee=='Akash_12345' && <ul onClick={()=> router.push('/Admin')}>Admin Panel</ul> }

@@ -12,7 +12,7 @@ export default function Team() {
     <div className={styles.news}>
         <h3>Subscribe for Newsletter</h3>
         <div className={styles.newsinput}>
-            <input placeholder='exampla@gmail.com ' type="text" />
+            <input placeholder='example@gmail.com ' type="text" />
             <button>Subscribe</button>
         </div>
     </div>

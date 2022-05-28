@@ -13,13 +13,13 @@ export default function intro() {
             
          <div className={styles.tag}>
              <h1>Find Safe & Obstacle Free Route For your Next Journey ! </h1>
-             <h3>
+             {/* <h3>
                  The Road ahead is may be a long but it must be a Safe so,
                  Dont Worry , We're here
                  Before you start your journey, tell us where you're heading and we'll show you if there are any blackspots in your way
-             </h3>
+             </h3> */}
 
-             <button  onClick={()=> router.push('/Map')}>Find Safe Route</button>
+             <button  onClick={()=> router.push('/Map')}>Show Black-spots</button>
          </div>
           <div className={styles.car}>
           <Fade right>

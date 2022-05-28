@@ -119,7 +119,7 @@ export default function Auth() {
                   </div>
                   <h5>
                     Dont Have Account ?{" "}
-                    <h4 onClick={() => setisLogin(false)}>Register Now</h4>
+                    <h4 onClick={() => setisLogin(false)} style={{  color:"pink" , borderBottom:"2px solid blue" , padding:0 , marginLeft:20}}>Register Now</h4>
                   </h5>
                 </Form>
               </Formik>
@@ -151,12 +151,15 @@ export default function Auth() {
 
                   <span>
                     <h5>Contact </h5>
-                    <Field
+                    {/* <Field
                       placeholder="Enter your phone"
                       name="phone"
-                      type="Phone"
+                      type="numbetr"
                       required={true}
                     />
+                    */}
+
+<input type="number"    placeholder="Enter your phone"name="" id="" />
                   </span>
                   <br />
 
@@ -190,7 +193,7 @@ export default function Auth() {
             </Formik>
             <h5>
               Already Have a Account ?{" "}
-              <h4 onClick={() => setisLogin(true)}>Login</h4>
+              <h4 onClick={() => setisLogin(true)}  style={{  color:"pink" , borderBottom:"2px solid blue" , padding:0 , marginLeft:20}}>Login</h4>
             </h5>
           </>
         )}
